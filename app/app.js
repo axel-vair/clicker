@@ -27,9 +27,11 @@ btnSemiAutoBuy.addEventListener("click", () => {
 })
 
     /* ~~ auto ~~ */
+
 btnAutoBuy.addEventListener("click", () => {
     autoBuy();
 })
+
 
     /* ~~ multiple  ~~ */
 btnMultipleBuy.addEventListener("click", () => {
@@ -56,6 +58,7 @@ function semiAutoBuy(){
 }
     /* ~~ function auto ~~ */
 function autoBuy(){
+    if()
     let interval = setInterval(() => {
         localStorage.setItem("countStock",count++);
         btnClicker.innerHTML = `Clicker ${localStorage.getItem('countStock')}`;
