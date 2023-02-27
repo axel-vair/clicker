@@ -1,0 +1,2 @@
+# clicker
+Javascript clicker game
