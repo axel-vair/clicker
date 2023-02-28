@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1a98ff;
+}
+
+h1, h2 {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    margin-bottom: 15px;
+}
+/* BUTTONS */
+
+.btnClicker {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #1976D2;
+    box-shadow: 1px 0 0 #1976D2,0 1px 0 #1976D2,
+    6px 5px 0 #1976D2,6px 5px 0 #1976D2;
+}
+
+.btnClicker:active {
+    transition: margin-top 0.3s ease;
+    margin-left: 0.3s ease;
+    box-shadow: 0.3s ease;
+    margin-left:9px;
+    box-shadow: 0px 0px 0px #1976D2;
+    border: 1px solid #1976D2;
+}
+
+
+
+.button-shop {
+    padding: 8px;
+    background: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 1px 0 0 #1976D2,0 1px 0 #1976D2,
+    6px 5px 0 #1976D2,6px 5px 0 #1976D2;
+}
+
+.button-shop:active{
+    transition: margin-top 0.3s ease;
+    margin-left: 0.3s ease;
+    box-shadow: 0.3s ease;
+    margin-left:9px;
+    box-shadow: 0px 0px 0px #1976D2;
+    border: 1px solid #1976D2;
+}
+
+.button-shop:hover{
+    background: #1a98ff;
+    transition: 200ms ease-in;
+}
+
+.btn-shop-item {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+/* CLICKER CONTAINER */
+.clicker-section {
+    display: flex;
+    justify-content: center;
+}
+/* SECTION SHOP */
+.shop-section {
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 2px rgba(255, 255, 255, 0.59) dashed;
+    border-radius: 5px;
+    position: relative;
+}
+
+/* SHOP ITEM */
+.shop-item {
+    width: 350px;
+    padding: 10px;
+}
+
+
+/* DESCRIPTION SHOP */
+.description-shop {
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
