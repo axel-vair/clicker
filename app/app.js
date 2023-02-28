@@ -14,14 +14,14 @@ btnClicker.classList.add("btnClicker");
 clickerContainer.appendChild(btnClicker);
 
 if(localStorage.getItem('countStock') == null){
-    btnClicker.innerHTML = `Bitter ${localStorage.getItem('countStock', 0)}`;
+    btnClicker.innerHTML = `Bitter 0`;
 }else{
     btnClicker.innerHTML = `Bitter ${localStorage.getItem('countStock')}`;
 }
 
 /* LISTENER CLICKER */
 btnClicker.addEventListener("click", () => {
-    countClick();
+    countClick(1);
 })
 
 /* LISTENER SHOP */
@@ -48,7 +48,7 @@ btnMultipleDeuxBuy.addEventListener("click", () => {
 })
 
 
-function countClick() {
+function countClick(value) {
     // initialisation de count
     let count;
     // si localstorage == null
@@ -59,7 +59,7 @@ function countClick() {
     } else {
         count = parseInt(localStorage.getItem('countStock'));
     }
-    count++;
+    count  = count + value;
     localStorage.setItem('countStock', count.toString());
     btnClicker.innerHTML = `Bitter ${localStorage.getItem('countStock')}`;
 }
