@@ -27,19 +27,19 @@
     <div class="auto shop">
         <h2>Auto</h2>
         <p class="description-shop">La description de mon bonus sera ici</p>
-        <button id="auto-buy">Acheter 100 bites</button>
+        <button id="auto-buy">Acheter 100 bittes</button>
 
     </div>
     <div class="multiple shop">
         <h2>Multiple x1.2</h2>
         <p class="description-shop">La description de mon bonus sera ici</p>
-        <button id="multiple-buy">Acheter</button>
+        <button id="multiple-buy">Acheter 200 bittes </button>
 
     </div>
     <div class="multiple-deux shop">
         <h2>Multiple x2</h2>
         <p class="description-shop">La description de mon bonus sera ici</p>
-        <button id="multiple-deux-buy">Acheter</button>
+        <button id="multiple-deux-buy">Acheter 300 bittes</button>
 
     </div>
 </section>
