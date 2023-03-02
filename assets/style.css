@@ -13,6 +13,45 @@ h1, h2 {
     text-align: center;
     margin-bottom: 15px;
 }
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px;
+}
+
+#logo {
+    font-family: 'Anton', sans-serif;
+    font-size: 25px;
+
+}
+
+#btn-connection, #btn-register, #btn-deconnection {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    color: #1976D2;
+    cursor: pointer;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    text-decoration: none;
+}
+
+#btn-connection:active, #btn-register:active, #btn-deconnection:active {
+    background: #1a98ff;
+    border: 1px solid white;
+    color: white;
+    transition: 0.2s ease-in;
+}
+
+.container-score {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.clicker-section {
+    display: flex;
+}
 /* BUTTONS */
 
 .btnClicker {
@@ -37,8 +76,6 @@ h1, h2 {
     box-shadow: 0px 0px 0px #1976D2;
     border: 1px solid #1976D2;
 }
-
-
 
 .button-shop {
     padding: 8px;
@@ -73,6 +110,34 @@ h1, h2 {
     margin: 10px 0;
 }
 
+#score {
+    font-family: "Fira Sans", sans-serif !important;
+    font-size: 25px;
+}
+
+/* BUTTONS COMMANDS */
+
+.btnCommands {
+    background: white;
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 18px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: #1976D2;
+    cursor: pointer;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    text-decoration: none;
+}
+
+.btnCommands:active {
+    background: #1a98ff;
+    border: 1px solid white;
+    color: white;
+    transition: 0.2s ease-in;
+
+}
+
 /* CLICKER CONTAINER */
 .clicker-section {
     display: flex;
@@ -100,4 +165,12 @@ h1, h2 {
 /* DESCRIPTION SHOP */
 .description-shop {
     font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+/* COMMANDS */
+
+.game-commands {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
