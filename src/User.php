@@ -106,8 +106,6 @@
         } else {
             return json_encode(['reponse' => 'not ok', 'echoue' => 'la connexion a échoué']);
         }
-
-
     }
 
     public function isConnected()

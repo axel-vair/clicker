@@ -1,5 +1,10 @@
 <?php
 session_start();
+require_once "includes/header.php";
+$utilisateur = new User();
+if ($utilisateur->isConnected() === false) {
+    header('Location: index.php');
+}
 ?>
 
 <!doctype html>
@@ -14,14 +19,21 @@ session_start();
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
-    <script src="/app/app_connect.js" defer></script>
+    <script src="app/app_connect.js" defer></script>
     <script src="app/app.js" defer></script>
 
     <title>Clicker Game</title>
 </head>
 <body>
 <?php require_once "includes/header.php"; ?>
-
+<div>
+    <div class="div-form">
+        <!-- Div qui vont accueillir les formulaires d'inscription et de connexion -->
+        <div id="forms"></div>
+        <!-- Span qui accueille les messages d'échecs et de réussites JS -->
+        <span id="registerSuccess"></span>
+    </div>
+</div>
 <h1>Clicker Game</h1>
 <div class="container-score">
     <div><p id="score"></p></div>
@@ -31,13 +43,19 @@ session_start();
         <button class="btnClicker">Smiles</button>
     </div>
 </section>
+<section>
+    <div class="container-recap">
+        <p>Smiles par clic : <span id="clics-recap">1</span></p>
+    </div>
+</section>
 <section class="shop-section">
     <div class="auto shop-item">
         <h2>Smiles</h2>
         <p class="description-shop">Vous pouvez augmenter le nombre de smiles par clics en achetant ce bonus. Le nombre
             de smile de base et de 1.</p>
         <div class="btn-shop-item">
-            <button class="bonus button-shop">Coût : <span id="clickCost">15</span> smiles - <span id="click">1</span> smiles/click
+            <button class="bonus button-shop">Coût : <span id="clickCost">15</span> smiles - <span id="click">1</span>
+                smiles/click
             </button>
         </div>
     </div>
@@ -46,7 +64,9 @@ session_start();
         <h2>Auto</h2>
         <p class="description-shop">En achetant ce bonus, vos smiles s'ajouteront de manière automatique chaque seconde. </p>
         <div class="btn-shop-item">
-            <button class="auto-buy button-shop">Coût : <span id="autoCost">100</span> smiles - <span id="autoClick">1</span> smile/sec</button>
+            <button class="auto-buy button-shop">Coût : <span id="autoCost">100</span> smiles - <span
+                        id="autoClick">1</span> smile/sec
+            </button>
         </div>
 
     </div>
@@ -55,7 +75,9 @@ session_start();
         <p class="description-shop">En achetant ce bonus, à chaque fois que vous cliquez vous augmenterez vos smiles
             de 1.2.</p>
         <div class="btn-shop-item">
-            <button class="multiple-buy button-shop">Coût :<span id="multiplyCost"> 200</span> smiles - <span id="multiplyClick">2</span> smiles/click</button>
+            <button class="multiple-buy button-shop">Coût : <span id="multiplyCost">200</span> smiles - <span
+                        id="multiplyClick">2</span> smiles/click
+            </button>
         </div>
     </div>
     <div class="multiple-deux shop-item">
@@ -63,14 +85,14 @@ session_start();
         <p class="description-shop">En achetant ce bonus, à chaque fois que vous cliquez vous augmenterez vos smiles
             de 2.</p>
         <div class="btn-shop-item">
-            <button class="multiple-deux-buy button-shop">Coût : <span id="multiplyDeuxCost">400</span>smiles - <span id="multiplyDeuxClick">4</span> smiles/click</button>
+            <button class="multiple-deux-buy button-shop">Coût : <span id="multiplyDeuxCost">400</span> smiles - <span
+                        id="multiplyDeuxClick">4</span> smiles/click
+            </button>
         </div>
     </div>
 </section>
 <section class="game-commands">
     <div>
-        <button class="btnCommands load">Load</button>
-        <button class="btnCommands save">Save</button>
         <button class="btnCommands reset">Reset</button>
     </div>
 </section>

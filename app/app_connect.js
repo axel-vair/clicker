@@ -10,9 +10,9 @@ if(btnRegister != null){
 
         /* STYLE FORMS REGISTER & CONNECTION */
         const divForm = document.getElementById('forms');
-        divForm.style.background = "#f1a9b4";
+        divForm.style.background = "white";
         divForm.style.padding = "20px";
-        divForm.style.borderRadius = "3px";
+        divForm.style.borderRadius = "7px";
 
         await fetch('inscription.php')
             /* Promesse qui va retourner la page */
@@ -45,11 +45,20 @@ if(btnRegister != null){
                 .then((contentResp) => {
                     if(contentResp['response'] === 'ok'){
                         document.getElementById('registerSuccess').innerHTML = contentResp['reussite'];
-                        spanMessage.innerText = contentResp['reussite'];
+                        spanMessage.innerText = contentResp['reussite']
+                        setInterval(() => {
+                            spanMessage.innerText = "";
+                        }, 2000);
+
 
                     }else{
                         document.getElementById('registerSuccess').innerHTML = contentResp['echoue']
                         spanMessage.innerText = contentResp['echoue'];
+                        setInterval(() => {
+                            spanMessage.innerText = "";
+                        }, 2000);
+
+
                     }
                 })
 
@@ -76,9 +85,9 @@ const removeBodyContent = () => {
 if(btnConnection != null) {
     btnConnection.addEventListener('click', async () => {
         const divForm = document.getElementById('forms');
-        divForm.style.background = "#f1a9b4";
+        divForm.style.background = "white";
         divForm.style.padding = "20px";
-        divForm.style.borderRadius = "3px";
+        divForm.style.borderRadius = "7px";
 
         await fetch('connexion.php')
             .then((response) => {

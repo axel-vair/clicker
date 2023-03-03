@@ -1,7 +1,7 @@
 <?php
 
 $getHeader = function($isConnected) {
-    $header = "<header><div><nav class='nav'><div id='logo'>ClicClic</div>";
+    $header = "<header><div><nav class='nav'><div id='logo'><img id='logo-smile' src='assets/Amazon_icon_black.svg.png' alt='logo-sourire'></div>";
 
     if (!$isConnected) {
         $header .= "
