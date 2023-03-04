@@ -4,15 +4,18 @@ const btnConnection = document.getElementById('btn-connection')
 const spanMessage = document.getElementById('registerSuccess')
 const btnAdd = document.getElementById('submit')
 
+
 /* Premier écouteur qui va permettre d'afficher le formulaire d'inscription sur l'index */
 if(btnRegister != null){
     btnRegister.addEventListener('click', async () => {
 
         /* STYLE FORMS REGISTER & CONNECTION */
         const divForm = document.getElementById('forms');
-        divForm.style.background = "white";
+        divForm.style.background = "linear-gradient(335deg, rgba(25,118,210,1) 5%, rgba(26,152,255,1) 81%)";
         divForm.style.padding = "20px";
         divForm.style.borderRadius = "7px";
+        divForm.style.boxShadow = "1px 1px 5px 5px rgba(0,0,0,0.22)";
+
 
         await fetch('inscription.php')
             /* Promesse qui va retourner la page */
@@ -85,9 +88,10 @@ const removeBodyContent = () => {
 if(btnConnection != null) {
     btnConnection.addEventListener('click', async () => {
         const divForm = document.getElementById('forms');
-        divForm.style.background = "white";
+        divForm.style.background = "linear-gradient(335deg, rgba(25,118,210,1) 5%, rgba(26,152,255,1) 81%)";
         divForm.style.padding = "20px";
         divForm.style.borderRadius = "7px";
+        divForm.style.boxShadow = "1px 1px 5px 5px rgba(0,0,0,0.22)";
 
         await fetch('connexion.php')
             .then((response) => {

@@ -71,9 +71,9 @@ if ($utilisateur->isConnected() === false) {
 
     </div>
     <div class="multiple shop-item">
-        <h2>Multiple x1.2</h2>
+        <h2>Multiple x2</h2>
         <p class="description-shop">En achetant ce bonus, à chaque fois que vous cliquez vous augmenterez vos smiles
-            de 1.2.</p>
+            de 2.</p>
         <div class="btn-shop-item">
             <button class="multiple-buy button-shop">Coût : <span id="multiplyCost">200</span> smiles - <span
                         id="multiplyClick">2</span> smiles/click
@@ -81,9 +81,9 @@ if ($utilisateur->isConnected() === false) {
         </div>
     </div>
     <div class="multiple-deux shop-item">
-        <h2>Multiple x2</h2>
+        <h2>Multiple x4</h2>
         <p class="description-shop">En achetant ce bonus, à chaque fois que vous cliquez vous augmenterez vos smiles
-            de 2.</p>
+            de 4.</p>
         <div class="btn-shop-item">
             <button class="multiple-deux-buy button-shop">Coût : <span id="multiplyDeuxCost">400</span> smiles - <span
                         id="multiplyDeuxClick">4</span> smiles/click

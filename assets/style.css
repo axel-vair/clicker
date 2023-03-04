@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
@@ -94,7 +95,7 @@ nav {
     margin-left: 0.3s ease;
     box-shadow: 0.3s ease;
     margin-left:9px;
-    box-shadow: 0px 0px 0px #1976D2;
+    box-shadow: 0 0 0px #1976D2;
     border: 1px solid #1976D2;
 }
 
@@ -164,6 +165,10 @@ nav {
 
 /* DIV FORM */
 
+.title-form {
+    color: white;
+}
+
 #form-register, #form-connection{
      display: flex;
      flex-direction: column;
@@ -186,8 +191,16 @@ label {
     margin-bottom: 12px;
     margin-top: 5px;
     border-radius: 5px;
-    border: 1px solid aliceblue;
+    border: 1px solid #9292d34d;
+    background: #e6e6ff40;
+    color: white;
 }
+
+#password::placeholder, #login::placeholder{
+    color: white;
+}
+
+
 
 .register_form_button, #connect_form_button {
     padding: 10px;
@@ -197,21 +210,14 @@ label {
     background: #1a98ff;
     text-transform: uppercase;
     border-radius: 5px;
-    border: 1px solid white;
+    border: 1px solid #ffffff26;
     color: white;
     cursor: pointer;
     align-self: center;
     font-family: 'Fira Sans Condensed', sans-serif;
 }
 
-#bonus-register, #bonus-connection {
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 0.8rem;
-    margin-top: 10px;
-}
-#underline-connection, #underline-register {
-    text-decoration: underline;
-}
+
 
 #registerSuccess {
     display: flex;

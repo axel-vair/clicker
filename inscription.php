@@ -8,14 +8,13 @@ if(isset($_POST) && !empty($_POST['login']) && !empty($_POST['password'])) {
 
 ?>
 
-<h1>Inscription</h1>
+<h2 class="title-form">Inscription</h2>
 <form id="form-register" method="post">
     <label for="login"></label>
     <input id="login" name="login" type="text" placeholder="login" required>
     <label for="password"></label>
     <input id="password" name="password" type="password" placeholder="mot de passe" required>
     <button type="submit" class="register_form_button" id="envoie" name="envoie">S'inscrire</button>
-    <p id="bonus-register">Vous avez déjà un compte ? <a id="underline-connection" role="button">Connectez-vous.</a></p>
 </form>
 
 

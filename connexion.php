@@ -15,7 +15,7 @@ if (isset($_POST['login']) && isset($_POST['password']) && !empty($_POST['login'
 }
 ?>
 
-<h1>Connexion</h1>
+<h2 class="title-form">Connexion</h2>
 <form id="form-connection" method="post">
     <label for="login"></label>
     <i class="fa-solid fa-trash"></i>
@@ -23,5 +23,4 @@ if (isset($_POST['login']) && isset($_POST['password']) && !empty($_POST['login'
     <label for="password"></label>
     <input id="password" name="password" type="password" placeholder="mot de passe" required>
     <button type="submit" id="connect_form_button" name="submit">Se connecter</button>
-    <p id="bonus-register">Vous n'avez pas de compte ? <a id="underline-register" role="button">Inscrivez-vous.</a></p>
 </form>

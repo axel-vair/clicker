@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2671083f-93ce-4fcb-88ec-9799f8cdefc9" name="Changes" comment="refactor total du code: smiles, multi et multi2 added">
-      <change afterPath="$PROJECT_DIR$/assets/Amazon_icon_black.svg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Amazon_icon_bluesvg.png" afterDir="false" />
+    <list default="true" id="2671083f-93ce-4fcb-88ec-9799f8cdefc9" name="Changes" comment="display cost, delete btn load/save, css">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app_connect.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/app_connect.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clicker.php" beforeDir="false" afterPath="$PROJECT_DIR$/clicker.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/connexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/connexion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/inscription.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +79,9 @@
       <workItem from="1677593703814" duration="8088000" />
       <workItem from="1677654459630" duration="33626000" />
       <workItem from="1677828039626" duration="18057000" />
+      <workItem from="1677873108255" duration="219000" />
+      <workItem from="1677925643260" duration="137000" />
+      <workItem from="1677925825364" duration="2642000" />
     </task>
     <task id="LOCAL-00001" summary="Push first files">
       <created>1677491863028</created>
@@ -128,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677761628004</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="display cost, delete btn load/save, css">
+      <created>1677873242042</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1677873242042</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <option name="searchClosedTasks" value="true" />
     <servers />
   </component>
@@ -153,6 +157,7 @@
     <MESSAGE value="NaN fixed" />
     <MESSAGE value="start css clicker" />
     <MESSAGE value="refactor total du code: smiles, multi et multi2 added" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor total du code: smiles, multi et multi2 added" />
+    <MESSAGE value="display cost, delete btn load/save, css" />
+    <option name="LAST_COMMIT_MESSAGE" value="display cost, delete btn load/save, css" />
   </component>
 </project>
